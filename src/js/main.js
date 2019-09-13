@@ -25,43 +25,11 @@ fetch('https://api.github.com/users/kamilbaczynski/repos?sort=updated')
     const repos = data;
 
     for (const repo of repos) {
-      repositoriesList.innerHTML += `<li><a href="${repo.html_url}">${repo.name}</a></li>`
+      repositoriesList.innerHTML += `<li class="repositories__item"><a href="${repo.html_url}" class="repositories__link">${repo.name}</a></li>`
     }
 
   })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// fetch('https://api.github.com/users/kamilbaczynski/repos?sort=updated')
-//   .then(data => data.json())
-//   .then(data => {
-//     const repos = data;
-//     for (const repo of repos){
-
-//       repositories.innerHTML = `<a href="${repo.html_url}">${repo.name}</a>`;
-
-//     }
-
-//   })
 
 
 
